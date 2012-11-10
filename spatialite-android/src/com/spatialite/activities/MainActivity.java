@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity implements OnClickListener {
+	@SuppressWarnings("unused")
 	private static final String TAG = MainActivity.class.getName();
 
 	@Override
