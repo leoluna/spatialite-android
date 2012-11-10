@@ -16,6 +16,7 @@ public class GeoFunctionTest extends DatabaseTestCase {
 	@Override
 	protected void tearDown() throws Exception {
 		closeDatabase();
+		deleteDatabase();
 		super.tearDown();
 	}
 	
