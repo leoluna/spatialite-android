@@ -26,9 +26,9 @@ LOCAL_CFLAGS	:= \
 	-DCANT_PASS_VALIST_AS_CHARPTR=1
 LOCAL_LDLIBS	:= -fuse-ld=gold -llog
 LOCAL_C_INCLUDES := \
-	$(SPATIALITE_PATH)/headers/spatialite/ \
+	$(SQLITE_PATH)/ \
 	$(JSQLITE_PATH)/native/
 LOCAL_SRC_FILES := \
 	$(JSQLITE_PATH)/native/sqlite_jni.c
-LOCAL_STATIC_LIBRARIES := spatialite proj geos
+LOCAL_STATIC_LIBRARIES := sqlite spatialite proj geos
 include $(BUILD_SHARED_LIBRARY)

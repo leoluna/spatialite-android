@@ -21,8 +21,8 @@ LOCAL_SRC_FILES := \
 	$(PROJ4_PATH)/src/geod_set.c \
 	$(PROJ4_PATH)/src/jniproj.c \
 	$(PROJ4_PATH)/src/mk_cheby.c \
+	$(PROJ4_PATH)/src/multistresstest.c \
 	$(PROJ4_PATH)/src/nad2bin.c \
-	$(PROJ4_PATH)/src/nad2nad.c \
 	$(PROJ4_PATH)/src/nad_cvt.c \
 	$(PROJ4_PATH)/src/nad_init.c \
 	$(PROJ4_PATH)/src/nad_intr.c \
@@ -31,6 +31,7 @@ LOCAL_SRC_FILES := \
 	$(PROJ4_PATH)/src/PJ_airy.c \
 	$(PROJ4_PATH)/src/PJ_aitoff.c \
 	$(PROJ4_PATH)/src/pj_apply_gridshift.c \
+	$(PROJ4_PATH)/src/pj_apply_vgridshift.c \
 	$(PROJ4_PATH)/src/PJ_august.c \
 	$(PROJ4_PATH)/src/pj_auth.c \
 	$(PROJ4_PATH)/src/PJ_bacon.c \
@@ -43,6 +44,7 @@ LOCAL_SRC_FILES := \
 	$(PROJ4_PATH)/src/PJ_chamb.c \
 	$(PROJ4_PATH)/src/PJ_collg.c \
 	$(PROJ4_PATH)/src/PJ_crast.c \
+	$(PROJ4_PATH)/src/pj_ctx.c \
 	$(PROJ4_PATH)/src/pj_datums.c \
 	$(PROJ4_PATH)/src/pj_datum_set.c \
 	$(PROJ4_PATH)/src/PJ_denoy.c \
@@ -74,10 +76,13 @@ LOCAL_SRC_FILES := \
 	$(PROJ4_PATH)/src/PJ_gstmerc.c \
 	$(PROJ4_PATH)/src/PJ_hammer.c \
 	$(PROJ4_PATH)/src/PJ_hatano.c \
+	$(PROJ4_PATH)/src/PJ_healpix.c \
+	$(PROJ4_PATH)/src/PJ_igh.c \
 	$(PROJ4_PATH)/src/PJ_imw_p.c \
 	$(PROJ4_PATH)/src/pj_init.c \
 	$(PROJ4_PATH)/src/pj_initcache.c \
 	$(PROJ4_PATH)/src/pj_inv.c \
+	$(PROJ4_PATH)/src/PJ_isea.c \
 	$(PROJ4_PATH)/src/PJ_krovak.c \
 	$(PROJ4_PATH)/src/PJ_labrd.c \
 	$(PROJ4_PATH)/src/PJ_laea.c \
@@ -88,6 +93,7 @@ LOCAL_SRC_FILES := \
 	$(PROJ4_PATH)/src/PJ_lcca.c \
 	$(PROJ4_PATH)/src/PJ_lcc.c \
 	$(PROJ4_PATH)/src/pj_list.c \
+	$(PROJ4_PATH)/src/pj_log.c \
 	$(PROJ4_PATH)/src/PJ_loxim.c \
 	$(PROJ4_PATH)/src/PJ_lsat.c \
 	$(PROJ4_PATH)/src/pj_malloc.c \
@@ -101,6 +107,7 @@ LOCAL_SRC_FILES := \
 	$(PROJ4_PATH)/src/PJ_moll.c \
 	$(PROJ4_PATH)/src/pj_msfn.c \
 	$(PROJ4_PATH)/src/pj_mutex.c \
+	$(PROJ4_PATH)/src/PJ_natearth.c \
 	$(PROJ4_PATH)/src/PJ_nell.c \
 	$(PROJ4_PATH)/src/PJ_nell_h.c \
 	$(PROJ4_PATH)/src/PJ_nocol.c \
@@ -151,6 +158,7 @@ LOCAL_SRC_FILES := \
 	$(PROJ4_PATH)/src/PJ_wink2.c \
 	$(PROJ4_PATH)/src/pj_zpoly1.c \
 	$(PROJ4_PATH)/src/proj.c \
+	$(PROJ4_PATH)/src/proj_etmerc.c \
 	$(PROJ4_PATH)/src/proj_mdist.c \
 	$(PROJ4_PATH)/src/proj_rouss.c \
 	$(PROJ4_PATH)/src/p_series.c \
