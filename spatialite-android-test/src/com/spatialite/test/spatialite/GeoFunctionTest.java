@@ -81,7 +81,7 @@ public class GeoFunctionTest extends DatabaseTestCase {
 	public void testGeometryRepresentation03() throws Exception {
 		Stmt stmt01 = db.prepare("SELECT AsKml(Geometry) FROM Highways WHERE PK_UID = 2;");
 		if(stmt01.step()) {
-			assertEquals("<LineString><coordinates>11.13099600000592,43.820771999992324 11.131468000005926,43.820664999992324</coordinates></LineString>", stmt01.column_string(0));
+			assertEquals("<LineString><coordinates>11.13099600000591,43.82077199999232 11.13146800000592,43.82066499999232</coordinates></LineString>", stmt01.column_string(0));
 		} else {
 			fail("Query failed");
 		}
@@ -110,7 +110,7 @@ public class GeoFunctionTest extends DatabaseTestCase {
 		if(stmt02.step()) {
 			assertEquals("774",stmt02.column_string(0));
 			assertEquals("6758",stmt02.column_string(1));
-			assertEquals("94997.8721344157",stmt02.column_string(2));
+			assertEquals("94997.8721344156",stmt02.column_string(2));
 			assertEquals("1",stmt02.column_string(3));
 			assertEquals("LINESTRING",stmt02.column_string(4));
 		} else {
