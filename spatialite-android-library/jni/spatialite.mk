@@ -13,17 +13,16 @@ common_sqlite_flags := \
         -DSQLITE_TEMP_STORE=3 \
         -DSQLITE_ENABLE_FTS3 \
         -DSQLITE_ENABLE_FTS3_BACKWARDS \
-        -DSQLITE_DEFAULT_FILE_FORMAT=4
+        -DSQLITE_DEFAULT_FILE_FORMAT=4 \
+        -DSQLITE_ENABLE_RTREE=1 \
+        -DSQLITE_OMIT_BUILTIN_TEST=1
 
 # spatialite flags
 spatialite_flags := \
 	-DOMIT_FREEXL \
-	-DOMIT_GEOCALLBACKS \
-        -DOMIT_ICONV \
-        -DVERSION=\"4.0.0\" \
-        -Dfdatasync=fsync \
-        -DSQLITE_ENABLE_RTREE=1 \
-        -DSQLITE_OMIT_BUILTIN_TEST=1
+	-DOMIT_ICONV \
+	-DVERSION=\"4.0.0\" \
+	-Dfdatasync=fsync
         
 LOCAL_CFLAGS    := \
 		$(common_sqlite_flags) \
