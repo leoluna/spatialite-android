@@ -55,7 +55,7 @@ public class GeoFunctionTest extends DatabaseTestCase {
 	public void testGeometryRepresentation02() throws Exception {
 		Stmt stmt01 = db.prepare("SELECT HEX(GeomFromText('POINT(10 20)'));");
 		if(stmt01.step()) {
-			assertEquals("0001FFFFFFFF00000000000024400000000000003440000000000000244000000000000034407C0100000000000000000024400000000000003440FE", stmt01.column_string(0));
+			assertEquals("00010000000000000000000024400000000000003440000000000000244000000000000034407C0100000000000000000024400000000000003440FE", stmt01.column_string(0));
 		} else {
 			fail("Query failed");
 		}
